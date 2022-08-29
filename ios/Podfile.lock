@@ -320,6 +320,19 @@ PODS:
     - React-Core
   - RNVectorIcons (8.1.0):
     - React-Core
+  - Stripe (21.11.1):
+    - Stripe/Stripe3DS2 (= 21.11.1)
+    - StripeCore (= 21.11.1)
+    - StripeUICore (= 21.11.1)
+  - stripe-react-native (0.2.4):
+    - React-Core
+    - Stripe (~> 21.11.1)
+  - Stripe/Stripe3DS2 (21.11.1):
+    - StripeCore (= 21.11.1)
+    - StripeUICore (= 21.11.1)
+  - StripeCore (21.11.1)
+  - StripeUICore (21.11.1):
+    - StripeCore (= 21.11.1)
   - TOCropViewController (2.6.0)
   - Yoga (1.14.0)
 
@@ -363,11 +376,15 @@ DEPENDENCIES:
   - RNReanimated (from `../node_modules/react-native-reanimated`)
   - RNScreens (from `../node_modules/react-native-screens`)
   - RNVectorIcons (from `../node_modules/react-native-vector-icons`)
+  - "stripe-react-native (from `../node_modules/@stripe/stripe-react-native`)"
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
   trunk:
     - boost-for-react-native
+    - Stripe
+    - StripeCore
+    - StripeUICore
     - TOCropViewController
 
 EXTERNAL SOURCES:
@@ -445,6 +462,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-screens"
   RNVectorIcons:
     :path: "../node_modules/react-native-vector-icons"
+  stripe-react-native:
+    :path: "../node_modules/@stripe/stripe-react-native"
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
@@ -487,9 +506,13 @@ SPEC CHECKSUMS:
   RNReanimated: 58e7b950e0172235ff8296dd39ec145f9577e301
   RNScreens: f7ad633b2e0190b77b6a7aab7f914fad6f198d8d
   RNVectorIcons: 31cebfcf94e8cf8686eb5303ae0357da64d7a5a4
+  Stripe: f2bed8369154c35c8ec794704e042e05240d6f21
+  stripe-react-native: 2ba5ddd91db057546757ad88bea950d9bfd4cacc
+  StripeCore: 36571be19dae15e90c8ad47e1af45712aea93f5a
+  StripeUICore: 1b32566d6a69581be786609a032872b0fb5a6823
   TOCropViewController: 3105367e808b7d3d886a74ff59bf4804e7d3ab38
   Yoga: 8c8436d4171c87504c648ae23b1d81242bdf3bbf
 
-PODFILE CHECKSUM: b0404031b1167505a50d642fe523561e345a3825
+PODFILE CHECKSUM: 29ee50dd7a0916489f5fe0747ab576687aa96ef7
 
 COCOAPODS: 1.10.1
